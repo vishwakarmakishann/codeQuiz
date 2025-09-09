@@ -39,28 +39,28 @@ It supports **admin functionalities** (quiz & question management) and **user fu
 ## 📸 ScreenShots
 
 **Landing page**
-![alt text](assets/screenshots/landing.png)
+![alt text](Frontend/src/assets/screenshots/landing.png)
 
 **Login**
-![alt text](assets/screenshots/login.png)
+![alt text](Frontend/src/assets/screenshots/login.png)
 
 **Quiz selection**
-![alt text](assets/screenshots/quizSelection.png)
+![alt text](Frontend/src/assets/screenshots/quizSelection.png)
 
 **Question**
-![alt text](assets/screenshots/question.png)
+![alt text](Frontend/src/assets/screenshots/question.png)
 
 **Result**
-![alt text](assets/screenshots/result.png)
+![alt text](Frontend/src/assets/screenshots/result.png)
 
 **Admin**
-![alt text](assets/screenshots/admin.png)
+![alt text](Frontend/src/assets/screenshots/admin.png)
 
 **View Quizzes**
-![alt text](assets/screenshots/viewQuiz.png)
+![alt text](Frontend/src/assets/screenshots/viewQuiz.png)
 
 **View Questions**
-![alt text](assets/screenshots/viewUser.png)
+![alt text](Frontend/src/assets/screenshots/viewUser.png)
 
 ---
 
