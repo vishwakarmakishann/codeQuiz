@@ -39,28 +39,28 @@ It supports **admin functionalities** (quiz & question management) and **user fu
 ## 📸 ScreenShots
 
 **Landing page**
-![alt text](Frontend/src/assets/screenshots/landing.png)
+![alt text](./codeQuiz//screenshots/landing.png)
 
 **Login**
-![alt text](Frontend/src/assets/screenshots/login.png)
+![alt text](./codeQuiz/screenshots/login.png)
 
 **Quiz selection**
-![alt text](Frontend/src/assets/screenshots/quizSelection.png)
+![alt text](./codeQuiz/screenshots/quizSelection.png)
 
 **Question**
-![alt text](Frontend/src/assets/screenshots/question.png)
+![alt text](./codeQuiz/screenshots/question.png)
 
 **Result**
-![alt text](Frontend/src/assets/screenshots/result.png)
+![alt text](./codeQuiz/screenshots/result.png)
 
 **Admin**
-![alt text](Frontend/src/assets/screenshots/admin.png)
+![alt text](./codeQuiz/screenshots/admin.png)
 
 **View Quizzes**
-![alt text](Frontend/src/assets/screenshots/viewQuiz.png)
+![alt text](./codeQuiz/screenshots/viewQuiz.png)
 
 **View Questions**
-![alt text](Frontend/src/assets/screenshots/viewUser.png)
+![alt text](./codeQuiz/screenshots/viewUser.png)
 
 ---
 
