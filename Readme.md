@@ -1,6 +1,6 @@
 # 📚 CodeQuiz
 
-A full-stack web application for creating, managing, and taking quizzes.  
+A full-stack web application using build MERN Stack for creating, managing, and taking quizzes.
 It supports **admin functionalities** (quiz & question management) and **user functionalities** (register, take quizzes, and view results).
 
 ---
