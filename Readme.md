@@ -93,7 +93,7 @@ npm run dev
 
 ---
 
-📌 API Endpoints
+## 📌 API Endpoints
 Authentication -
 POST /auth/register → Register user
 POST /auth/login → Login user
