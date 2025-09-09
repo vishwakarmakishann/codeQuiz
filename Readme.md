@@ -66,8 +66,8 @@ It supports **admin functionalities** (quiz & question management) and **user fu
 
 ## 🔧 Installation & Setup
 
-### 1️⃣ Clone the repository
 ```bash
+1️⃣ Clone the repository
 git clone https://github.com/your-username/codeQuiz.git
 cd codeQuiz
 
@@ -94,22 +94,22 @@ npm run dev
 ```
 
 ## 📌 API Endpoints
-Authentication -
-POST /auth/register → Register user
-POST /auth/login → Login user
-POST /auth/logout → Logout user
+**Authentication**
+- POST /auth/register → Register user
+- POST /auth/login → Login user
+- POST /auth/logout → Logout user
 
-Quizzes -
-POST /quiz → Create new quiz (Admin)
-PATCH /quiz/:id → Edit quiz (Admin)
-DELETE /quiz/:id → Delete quiz (Admin)
-GET /quiz → Get all quizzes
-GET /quiz/:id → Get all quiz
+**Quizzes**
+- POST /quiz → Create new quiz (Admin)
+- PATCH /quiz/:id → Edit quiz (Admin)
+- DELETE /quiz/:id → Delete quiz (Admin)
+- GET /quiz → Get all quizzes
+- GET /quiz/:id → Get all quiz
 
-Questions -
-POST /question → Add question (Admin)
-PATCH /question/:id → Edit question (Admin)
-DELETE /question/:id → Delete question (Admin)
-GET /question/:id → Get question
-GET /question/quiz/:id → Get questions for a quiz
-GET /question → Get all questions
+**Questions**
+- POST /question → Add question (Admin)
+- PATCH /question/:id → Edit question (Admin)
+- DELETE /question/:id → Delete question (Admin)
+- GET /question/:id → Get question
+- GET /question/quiz/:id → Get questions for a quiz
+- GET /question → Get all questions
