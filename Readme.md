@@ -40,12 +40,26 @@ It supports **admin functionalities** (quiz & question management) and **user fu
 
 **Landing page**
 ![alt text](landing.png)
+
+**Login**
 ![alt text](login.png)
+
+**Quiz selection**
 ![alt text](quizSelection.png)
+
+**Question**
 ![alt text](question.png)
+
+**Result**
 ![alt text](result.png)
+
+**Admin**
 ![alt text](admin.png)
+
+**View Quizzes**
 ![alt text](viewQuiz.png)
+
+**View Questions**
 ![alt text](viewUser.png)
 
 ---
