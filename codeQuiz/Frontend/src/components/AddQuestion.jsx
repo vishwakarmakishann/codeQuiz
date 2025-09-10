@@ -16,7 +16,7 @@ const AddQuestion = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         try {
-            axios.post("http://localhost:4000/question", { quizId, question, options: [option1, option2, option3, option4], answer })
+            axios.post(`${process.env.REACT_APP_API_URL}/question`, { quizId, question, options: [option1, option2, option3, option4], answer })
             nav("/viewQuizzes");
         } catch (error) {
             console.log(error);

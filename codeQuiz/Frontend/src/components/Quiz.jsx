@@ -10,7 +10,7 @@ const Quiz = () => {
   const nav = useNavigate();
 
   useEffect(() => {
-    axios.get("http://localhost:4000/quiz").then((result) => {
+    axios.get(`${process.env.REACT_APP_API_URL}/quiz`).then((result) => {
       setQuiz(result.data)
     }).catch((err) => {
       console.log(err);

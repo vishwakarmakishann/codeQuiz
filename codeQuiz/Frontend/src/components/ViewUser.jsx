@@ -6,7 +6,7 @@ const ViewUser = () => {
     const nav = useNavigate();
     const [user, setUser] = useState([]);
     useEffect(() => {
-        axios.get("http://localhost:4000/auth").then((result) => {
+        axios.get(`${process.env.REACT_APP_API_URL}/auth`).then((result) => {
             setUser(result.data);
         }).catch((err) => {
             console.log(err);
@@ -20,8 +20,8 @@ const ViewUser = () => {
 
     async function handleDelete(userId) {
         if (window.confirm("Are you sure you want to delete this quiz?")) {
-            await axios.delete(`http://localhost:4000/auth/${userId}`)
-            const result = await axios.get("http://localhost:4000/auth");
+            await axios.delete(`${process.env.REACT_APP_API_URL}/auth/${userId}`)
+            const result = await axios.get(`${process.env.REACT_APP_API_URL}/auth`);
             setUser(result.data);
             nav("/viewUsers");
         }

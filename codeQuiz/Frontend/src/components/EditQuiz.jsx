@@ -10,7 +10,7 @@ const EditQuiz = () => {
     const nav = useNavigate();
 
     useEffect(()=>{ 
-        axios.get(`http://localhost:4000/quiz/${quizId}`) .then((result) => {
+        axios.get(`${process.env.REACT_APP_API_URL}/quiz/${quizId}`) .then((result) => {
             setQuiz(result.data);
         }).catch((err) => {
             console.log(err);
@@ -21,7 +21,7 @@ const EditQuiz = () => {
     const handleSubmit = async (e)=>{
         e.preventDefault();
         try {
-            const res = await axios.patch(`http://localhost:4000/quiz/${quizId}`, {name:quiz});
+            const res = await axios.patch(`${process.env.REACT_APP_API_URL}/quiz/${quizId}`, {name:quiz});
             setMessage(res.data.message);
             setTimeout(() => {
                 nav("/viewQuizzes")

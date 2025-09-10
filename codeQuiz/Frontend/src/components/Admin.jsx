@@ -5,7 +5,7 @@ const Admin = () => {
     const nav = useNavigate();
     const [user, setUser] = useState("");
     async function handleLogout() {
-        await axios.post("http://localhost:4000/auth/logout", {}, { withCredentials: true })
+        await axios.post(`${process.env.REACT_APP_API_URL}/auth/logout`, {}, { withCredentials: true })
             .then(() => {
                 nav("/")
             })
@@ -15,7 +15,7 @@ const Admin = () => {
     }
 
     useEffect(() => {
-            axios.get("http://localhost:4000/session", { withCredentials: true })
+            axios.get(`${process.env.REACT_APP_API_URL}/session`, { withCredentials: true })
                 .then((result) => {
                     setUser(result.data);
                 })

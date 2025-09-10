@@ -6,7 +6,7 @@ const ViewQuizzes = () => {
   const nav = useNavigate();
   const [quiz, setQuiz] = useState([]);
   useEffect(() => {
-    axios.get("http://localhost:4000/quiz").then((result) => {
+    axios.get(`${process.env.REACT_APP_API_URL}/quiz`).then((result) => {
       setQuiz(result.data);
     }).catch((err) => {
       console.log(err);
@@ -28,8 +28,8 @@ const ViewQuizzes = () => {
 
   async function handleDelete(quizId) {
     if (window.confirm("Are you sure you want to delete this quiz?")) {
-      await axios.delete(`http://localhost:4000/quiz/${quizId}`)
-      const result = await axios.get("http://localhost:4000/quiz");
+      await axios.delete(`${process.env.REACT_APP_API_URL}/quiz/${quizId}`)
+      const result = await axios.get(`${process.env.REACT_APP_API_URL}/quiz`);
       setQuiz(result.data);
       nav("/ViewQuizzes");
     }

@@ -17,7 +17,7 @@ const Questions = () => {
 
 
     useEffect(() => {
-        axios.get(`http://localhost:4000/question/quiz/${quizId}`).then((result) => {
+        axios.get(`${process.env.REACT_APP_API_URL}/question/quiz/${quizId}`).then((result) => {
             setQuestions(result.data);
         }).catch((err) => {
             console.log(err);

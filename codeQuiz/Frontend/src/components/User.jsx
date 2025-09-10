@@ -42,7 +42,7 @@ const Home = ({ username }) => {
     ];
 
     useEffect(() => {
-        axios.get("http://localhost:4000/session", { withCredentials: true })
+        axios.get(`${process.env.REACT_APP_API_URL}/session`, { withCredentials: true })
             .then((result) => {
                 console.log("Session API response:", result.data);
                 setUser(result.data);
@@ -53,7 +53,7 @@ const Home = ({ username }) => {
     }, []);
 
     async function handleLogout() {
-        await axios.post("http://localhost:4000/auth/logout", {}, { withCredentials: true })
+        await axios.post(`${process.env.REACT_APP_API_URL}/auth/logout`, {}, { withCredentials: true })
             .then(() => {
                 nav("/")
             })

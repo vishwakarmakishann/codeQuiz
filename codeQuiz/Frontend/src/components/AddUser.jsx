@@ -13,7 +13,7 @@ const AddUser = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const res = await axios.post("http://localhost:4000/auth/register", { username: user, password:pass, role:role });
+            const res = await axios.post(`${process.env.REACT_APP_API_URL}/auth/register`, { username: user, password:pass, role:role });
             setMessage(res.data.message);
             setTimeout(() => {
                 nav("/admin");

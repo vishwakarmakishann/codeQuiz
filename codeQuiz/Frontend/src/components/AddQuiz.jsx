@@ -11,7 +11,7 @@ const AddQuiz = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const res = await axios.post("http://localhost:4000/quiz", { name: quiz });
+            const res = await axios.post(`${process.env.REACT_APP_API_URL}/quiz`, { name: quiz });
             setMessage(res.data.message);
             setTimeout(() => {
                 nav("/admin");

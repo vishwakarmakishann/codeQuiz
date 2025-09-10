@@ -16,7 +16,7 @@ const EditQuestion = () => {
     const [answer, setAnswer] = useState("");
 
     useEffect(() => {
-        axios.get(`http://localhost:4000/question/${quesId}`).then((result) => {
+        axios.get(`${process.env.REACT_APP_API_URL}/question/${quesId}`).then((result) => {
             setQuestion(result.data.question);
             setOption1(result.data.options[0]);
             setOption2(result.data.options[1]);
@@ -30,7 +30,7 @@ const EditQuestion = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         try {
-            axios.patch(`http://localhost:4000/question/${quesId}`, { question, options: [option1, option2, option3, option4], answer })
+            axios.patch(`${process.env.REACT_APP_API_URL}/question/${quesId}`, { question, options: [option1, option2, option3, option4], answer })
             nav(`/viewQuestions/${quizId}`);
         } catch (error) {
             console.log(error);

@@ -7,7 +7,7 @@ const ViewQuestions = () => {
     const nav = useNavigate();
     const [question, setQuestion] = useState([]);
     useEffect(() => {
-        axios.get(`http://localhost:4000/question/quiz/${quizId}`).then((result) => {
+        axios.get(`${process.env.REACT_APP_API_URL}/question/quiz/${quizId}`).then((result) => {
             setQuestion(result.data);
         }).catch((err) => {
             console.log(err);
@@ -21,8 +21,8 @@ const ViewQuestions = () => {
     }
     async function handleDelete(questionId) {
         if (window.confirm("Are you sure you want to delete this question?")) {
-            await axios.delete(`http://localhost:4000/question/${questionId}`)
-            const result = await axios.get(`http://localhost:4000/question/quiz/${quizId}`);
+            await axios.delete(`${process.env.REACT_APP_API_URL}/question/${questionId}`)
+            const result = await axios.get(`${process.env.REACT_APP_API_URL}/question/quiz/${quizId}`);
             setQuestion(result.data);
             nav(`/viewQuestions/${quizId}`);
         }   
